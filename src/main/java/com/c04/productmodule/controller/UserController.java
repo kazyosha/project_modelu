@@ -91,14 +91,6 @@ public class UserController {
                 .collect(Collectors.joining("&"));
     }
 
-    private String buildBaseUrl(Long departmentId) {
-        String baseUrl = "/admin";
-        if (departmentId != null) {
-            baseUrl += "?departmentId=" + departmentId;
-        }
-        return baseUrl;
-    }
-
     @GetMapping("/user/create")
     public String createUser(Model model) {
         CreateUserDTO createUserDTO = new CreateUserDTO();

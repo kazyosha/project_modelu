@@ -1,6 +1,6 @@
 package com.c04.productmodule.controller;
 
-import com.c04.productmodule.models.User;
+
 import com.c04.productmodule.services.AuthService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
